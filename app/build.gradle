@@ -5,11 +5,13 @@ buildscript {
   }
   dependencies {
     classpath 'com.neenbedankt.gradle.plugins:android-apt:1.7'
+    classpath 'com.facebook.testing.screenshot:plugin:0.4.2'
   }
 }
 
 apply plugin: 'com.android.application'
 apply plugin: 'com.neenbedankt.android-apt'
+apply plugin: 'com.facebook.testing.screenshot'
 
 android {
   compileSdkVersion 23
